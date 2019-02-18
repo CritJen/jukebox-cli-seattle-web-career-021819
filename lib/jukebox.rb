@@ -28,6 +28,7 @@ def play(songs)
   song_selection = gets.chomp
   if songs.include?(song_selection)
     puts "Playing #{song_selection}"
+  elsif song_selection.between?(1...9)
   else
     "Invalid input, please try again"
   end

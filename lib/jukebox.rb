@@ -20,10 +20,10 @@ end
 def list(songs)
   songs.each_with_index do |song, index|
     puts "#{index + 1} #{song}"
-  end 
+  end
 end
 
-def play
+def play(songs)
   puts "Please enter a song name or number:"
   song_selection = gets.chomp
   if songs.include?(song_selection)

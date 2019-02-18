@@ -20,7 +20,7 @@ end
 def list(songs)
   songs.each_with_index do |song, index|
     puts "#{index + 1} #{song}"
-  end 
+  end
 end
 
 def play
@@ -31,4 +31,8 @@ def play
   else
     "Invalid input, please try again"
   end
+end
+
+def exit_jukebox
+  puts "Goodbye"
 end
